@@ -49,6 +49,7 @@ nav a:hover {
     margin: 0 1.5%;
     padding: 30px 20px;
     box-sizing: border-box;
+
     /* como colocar bordas separadamente
     border-color: #000000;
     border-width: 2px;
@@ -89,7 +90,7 @@ nav a:hover {
 
 footer {
     text-align: center;
-    background: url("/home/claudia/Área de Trabalho/aulas html e css alura/parte 1/imagens/bg.jpg");
+    background: url("imagens/bg.jpg");
     padding: 40px 0;
 }
 
@@ -219,12 +220,36 @@ form label, form legend {
 }
 
 @media screen and (max-width: 480px) {
-    .box, .principal, .conteudo-beneficios, .mapa-conteudo, .video {
+
+    body {
         width: auto;
+    }
+
+     .box, .principal, .conteudo-beneficios, .mapa-conteudo, .video, footer {
+        width: auto;
+        height: auto;
+        background-size: cover;
+        background-position: center center;
+    }
+
+    .banner {
+        width: auto;
+        
+    }
+
+    img {
+        background-size: cover;
+        width: auto;
+    }
+
+    .video {
+
     }
 
     h1 {
         text-align: center;
+        width: auto;
+        background-size: cover;
     }
 
     nav {
@@ -233,5 +258,6 @@ form label, form legend {
 
     .lista-beneficios, .imagem-beneficios {
         width: 100%;
+        background-position: center center;
     }
 }

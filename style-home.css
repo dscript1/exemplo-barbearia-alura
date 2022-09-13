@@ -54,3 +54,28 @@ ul {
     width: 50%;
 }
 
+@media screen (max-width: 480px) {
+
+    body, #banner, header {
+        display: flex;
+        background-size: cover;
+    }
+
+    .box, header, h1, h2, h3, img, p, footer {
+        width: auto;
+        height: auto;
+        text-align: center;
+        font-size: 100%;
+        background-size: cover;
+    
+    }
+
+    .principal, .mapa, .beneficios, .conteudo-beneficios {
+        text-align: center;
+        font-size: 100%;
+        width: auto;
+        height: auto;
+        background-size: cover;
+        background-position: center center;
+    }
+}

@@ -89,7 +89,7 @@ nav a:hover {
 
 footer {
     text-align: center;
-    background: url("/home/claudia/Área de Trabalho/aulas html e css alura/parte 1/imagens/bg.jpg");
+    background: url("imagens/bg.jpg");
     padding: 40px 0;
 }
 
@@ -119,6 +119,16 @@ form label, form legend {
     margin: 0 0 20px;
     padding: 10px 25px;
     width: 50%;
+}
+
+#caixa-form {
+    height: 80%;
+    width: 25%;
+    font-size: 20px;
+}
+
+option {
+    font-size: 20px;
 }
 
 .checkbox {
@@ -164,4 +174,33 @@ td, th {
     font-size: 16px;
     padding: 8px;
     text-align: justify;
+}
+
+@media screen and (max-width: 480px) {
+    .box, footer {
+        width: 100%;
+        height: 100%;
+    }
+
+    h1 {
+        width: auto;
+        height: auto;
+        text-align:inherit;
+    }
+
+   form {
+    text-align: center;
+    width: auto;
+    height: auto;
+    }
+
+    label {
+        text-align: center;
+        width: auto;
+        height: auto;
+    }
+    
+    thead {
+        max-width: 100%;
+    }
 }
